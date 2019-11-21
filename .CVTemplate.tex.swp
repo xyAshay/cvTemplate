@@ -12,7 +12,9 @@
 	
 	\begin{minipage}{0.33\textwidth}
 		\section{Personal Info}
-			
+			\vspace{-20pt}\color{darkgrey}\rule{0.8\textwidth}{1pt}
+			\heading{Address}
+			\body{4,'Swami' Mayane,Rambaug Colony,Kothrud,Pune}
 	\end{minipage}	
 	
 
