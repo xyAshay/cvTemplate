@@ -38,7 +38,7 @@
 %%FORMATTING SECTIONS
 \titleformat{\section}{
 	\raggedright
-	\fontsize{18}{27}
+	\fontsize{15}{18}
 	\fontspec[Path = fonts/raleway/]{Raleway-Medium}\selectfont\color{main}
 }{}{0pt}{} 
 
@@ -46,13 +46,22 @@
 %%CUSTOM COMMANDS
 \newcommand{\heading}[1]{
 	\raggedright
-	\fontsize{14}{20}
+	\fontsize{10}{12}
 	\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\selectfont\color{darkgrey} #1
-	\\[0pt]
+	\\
 }
 
 \newcommand{\body}[1]{
 	\raggedright
-	\fontsize{13}{20}
+	\fontsize{11}{13}
 	\fontspec[Path = fonts/raleway/]{Raleway-Regular}\selectfont\color{grey} #1
+	\\[10pt]
+}
+
+\newcommand{\secEnd}{
+	\vspace{10pt}
+}
+
+\newcommand{\secLine}{
+	\vspace{-15pt}\color{darkgrey}\rule{1.1\textwidth}{1pt}\vspace{5pt}
 }
