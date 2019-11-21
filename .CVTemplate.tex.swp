@@ -2,6 +2,7 @@
 \documentclass [a4paper]{myCV}
 
 \usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -10,22 +11,24 @@
 	\renewcommand{\headrulewidth}{0pt} 
 	\drawHead{Ashay}{Sahare}{BE Information Technology Candidate}
 	
-	\begin{minipage}{0.33\textwidth}
-		\section{Personal Info}
+	\begin{minipage}{0.37\textwidth}
+		\section*{Personal Info}
 			\secLine
 			\heading{Address}
-			\body{4,'Swami' Mayane,Rambaug Colony,Kothrud,Pune}
+			\body{'Swami' Mayane, Rambaug Colony, Kothrud, Pune.}
 			\heading{Phone}
 			\body{(+91)965-703-1367}
 			\heading{Email}
 			\body{ashay.mailbox@gmail.com}
 			\heading{LinkedIn}
+			%\href{www.linkedin.com/in/AshaySahare.html}{\hspace{-5pt}\body{www.linkedin.com/in/AshaySahare}}
 			\body{www.linkedin.com/in/AshaySahare}
 			\heading{GitHub}
+			%\href{www.github.com/xyAshay.html}{\hspace{-5pt}\body{www.github.com/xyAshay}}
 			\body{www.github.com/xyAshay}
-			\secEnd
+		\secEnd
 			
-		\section{Programming}
+		\section*{Programming}
 			\secLine
 			\heading{Over 3000 Lines}
 			\body{C \textbullet{} C++ \textbullet{} JavaScript \textbullet{} HTML \textbullet{} CSS}
@@ -35,10 +38,103 @@
 			\body{MySQL \textbullet{} MongoDB \textbullet{} PostgreSQL}
 			\heading{Frameworks}
 			\body{ExpressJS \textbullet{} Vue \textbullet{} React}
+		\secEnd
+			
+		\section*{Soft Skills}
+			\secLine
+			\body{\textbullet{} Problem Solving}\vspace{-5pt}
+			\body{\textbullet{} Critical Thinking}\vspace{-5pt}
+			\body{\textbullet{} Adaptibility}\vspace{-5pt}
+			\body{\textbullet{} Teamwork}\vspace{-5pt}
+			\body{\textbullet{} Communication Skills}
 			\secEnd
 			
+		\section*{Misc}
+			\secLine
+			\body{\textbullet{} Problem Solving}\vspace{-5pt}
+			\body{\textbullet{} Critical Thinking}\vspace{-5pt}
+			\body{\textbullet{} Adaptibility}\vspace{-5pt}
+			\body{\textbullet{} Teamwork}\vspace{-5pt}
+			\body{\textbullet{} Communication Skills}
+		\secEnd			
+	\end{minipage}
+	\hfill
+	%%SECOND COLUMN
+	\begin{minipage}{0.60\textwidth}
+		\begin{minipage}{20pt}\hfill\end{minipage}
+		\section*{Education}
+			\secLinee
+			\begin{minipage}{0.25\textwidth}
+				\body{July 2016 - May 2020 (Expected)}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{7pt}
+				\heading{MIT College Of Engineeering}
+				\inHeading{Course\hspace{10pt}:}\inBody{Bachelor Of Engineering}\\
+				\inHeading{Branch\hspace{10pt}:}\inBody{Information Technology}\\
+				\inHeading{GPA\hspace{24pt}:}\inBody{\hspace{2pt}8.37/10 (Agg. Upto 7th Semester)}
+			\end{minipage}
+			%END ENTRY%
+			\begin{minipage}{0.25\textwidth}
+				\body{July 2014 - May 2016}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{15pt}
+				\heading{Hadas Jr College, Nagpur}
+				\inHeading{Class\hspace{18pt}:}\inBody{12th}\\
+				\inHeading{Board\hspace{15pt}:}\inBody{Maharashtra State Board}\\
+				\inHeading{Bifocal\hspace{11pt}:}\inBody{Computer Science}\\
+				\inHeading{GPA\hspace{24pt}:}\inBody{\hspace{2pt}7.69/10}
+			\end{minipage}
+			%END ENTRY%
+			\begin{minipage}{0.25\textwidth}
+				\body{July 2013 - May 2014}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{15pt}
+				\heading{Sanskar VidyaSagar, Nagpur}
+				\inHeading{Class\hspace{18pt}:}\inBody{10th}\\
+				\inHeading{Board\hspace{15pt}:}\inBody{CBSE}\\
+				\inHeading{Optional\hspace{3pt}:}\inBody{Computer Science}\\
+				\inHeading{GPA\hspace{24pt}:}\inBody{\hspace{2pt}9.4/10}
+			\end{minipage}
+			%%END ENTRY
+		\secEnd
 		
-	\end{minipage}	
-	
-
+		\section*{Projects}
+			\secLinee
+			\begin{minipage}{0.25\textwidth}
+				\body{Sept 2018 - Dec 2018}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{7pt}
+				\heading{MIT-Connect Website}
+				\inHeading{Description :}\inBody{A Social Networking Model Developed For Students To Keep Up With College Acivities And Official Notifications.}\\
+				\inHeading{Mentor :}\inBody{Prof. Hanmant D. Magar}\\
+				\inHeading{Technologies Used :}\inBody{HTML , CSS , Bootstrap , JavaScript , MySQL , Servelets}\\
+				\inHeading{Demo :}\inBody{mitconnect.000webhostapp.com}
+			\end{minipage}
+			%%END ENTRY
+			\begin{minipage}{0.25\textwidth}
+				\body{May 2019 - July 2019}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{15pt}
+				\heading{SendOver}
+				\inHeading{Description :}\inBody{A Simple Web Utility To Send Files Over To Other Devices Within The Same Network.}\\
+				\inHeading{Technologies Used :}\inBody{ExpressJS , React}\\
+				\inHeading{Repository :}\inBody{github.com/xyAshay/sendOver}
+			\end{minipage}
+			%%END ENTRY
+		\secEnd
+		%%ADD MORE INFO
+		\vspace{150pt}
+		%%END MORE INFO
+	\end{minipage}
+	\hfill
 \end{document}

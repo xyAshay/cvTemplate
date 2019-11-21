@@ -25,13 +25,13 @@
 \newcommand{\drawHead}[3]{
 	\vspace*{-10pt}
 	\raggedright{
-		\fontsize{28}{36}
+		\fontsize{30}{36}
 		\fontspec[Path = fonts/roboto/]{Roboto-Medium}\selectfont\color{main} #1
 		\fontspec[Path = fonts/roboto/]{Roboto-Medium}\selectfont\color{main} #2
 		\\
-		\fontsize{12}{18}
+		\fontsize{14}{17}
 		\fontspec[Path = fonts/roboto/]{Roboto-LightItalic}\selectfont\color{main} #3
-		\\[35pt]
+		\\[38pt]
 	}
 }
 
@@ -58,10 +58,26 @@
 	\\[10pt]
 }
 
+\newcommand{\inHeading}[1]{
+	\raggedright
+	\fontsize{10}{12}
+	\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\selectfont\color{darkgrey} #1
+}
+
+\newcommand{\inBody}[1]{
+	\raggedright
+	\fontsize{11}{13}
+	\fontspec[Path = fonts/raleway/]{Raleway-Regular}\selectfont\color{grey} #1
+}
+
 \newcommand{\secEnd}{
 	\vspace{10pt}
 }
 
 \newcommand{\secLine}{
-	\vspace{-13pt}\color{darkgrey}\rule{1.1\textwidth}{1pt}\vspace{5pt}
+	\vspace{-13pt}\color{darkgrey}\rule{0.95\textwidth}{1pt}\vspace{7pt}
+}
+
+\newcommand{\secLinee}{
+	\vspace{-13pt}\color{darkgrey}\rule{1.05\textwidth}{1pt}\vspace{5pt}
 }
