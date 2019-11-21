@@ -25,8 +25,19 @@
 			\body{www.github.com/xyAshay}
 			\secEnd
 			
-		\section{Soft Skills}
+		\section{Programming}
 			\secLine
+			\heading{Over 3000 Lines}
+			\body{C \textbullet{} C++ \textbullet{} JavaScript \textbullet{} HTML \textbullet{} CSS}
+			\heading{Over 1000 Lines}
+			\body{Java \textbullet{} Python \textbullet{} NodeJS \textbullet{} GoLang}
+			\heading{Databases}
+			\body{MySQL \textbullet{} MongoDB \textbullet{} PostgreSQL}
+			\heading{Frameworks}
+			\body{ExpressJS \textbullet{} Vue \textbullet{} React}
+			\secEnd
+			
+		
 	\end{minipage}	
 	
 

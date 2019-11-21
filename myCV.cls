@@ -63,5 +63,5 @@
 }
 
 \newcommand{\secLine}{
-	\vspace{-15pt}\color{darkgrey}\rule{1.1\textwidth}{1pt}\vspace{5pt}
+	\vspace{-13pt}\color{darkgrey}\rule{1.1\textwidth}{1pt}\vspace{5pt}
 }
