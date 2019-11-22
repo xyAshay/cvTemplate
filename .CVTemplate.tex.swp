@@ -1,29 +1,37 @@
-% !TEX CV = XeLaTeX
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+% Reppository :
+% https://github.com/xyAshay/
+%
+% Author:
+% xyAshay
+
 \documentclass [a4paper]{myCV}
 
-\usepackage{fancyhdr}
-\usepackage[hidelinks]{hyperref}
-
-\pagestyle{fancy}
-\fancyhf{}
-
 \begin{document}
+	\pagestyle{fancy}
+	\fancyhf{}
+	\renewcommand{\footrulewidth}{0pt}
 	\renewcommand{\headrulewidth}{0pt} 
 	\drawHead{Ashay}{Sahare}{BE Information Technology Candidate}
 	\showUpdated
+	\drawFoot
 	
 	\begin{minipage}[t]{0.37\textwidth}
 		\section*{Personal Info}
 			\secLine
-			\heading{Address}
-			\body{'Swami' Mayane, Rambaug Colony, Kothrud, Pune.}
-			\heading{Phone}
+			\\[1pt]
+			\heading{\faMapMarker \hspace{5pt} Address}
+			\body{Kothrud, Pune, Maharashtra}
+			\heading{\faPhone \hspace{5pt} Phone}
 			\body{(+91)965-703-1367}
-			\heading{Email}
-			\body{ashay.mailbox@gmail.com}
-			\heading{LinkedIn}
+			\heading{\faEnvelopeO \hspace{5pt} Email}
+			\href{mailto:ashay.mailbox@gmail.com}{\hspace{-5pt}\body{ashay.mailbox@gmail.com}}
+			
+			\heading{\faLinkedinSquare \hspace{5pt} LinkedIn}
 			\href{https://www.linkedin.com/in/AshaySahare}{\hspace{-5pt}\body{www.linkedin.com/in/AshaySahare}}
-			\heading{GitHub}
+			\heading{\hspace{0pt} \faGithub \hspace{4pt} GitHub}
 			\href{https://www.github.com/xyAshay}{\hspace{-5pt}\body{www.github.com/xyAshay}}
 		\secEnd
 			
@@ -66,7 +74,6 @@
 			\hfill
 			\begin{minipage}{0.75\textwidth}
 				\vspace{7pt}
-				\vspace{7pt}
 				\heading{MIT College Of Engineeering}
 				\inHeading{Course\hspace{10pt}:}\inBody{Bachelor Of Engineering}\\
 				\inHeading{Branch\hspace{10pt}:}\inBody{Information Technology}\\
@@ -95,7 +102,7 @@
 				\heading{Sanskar VidyaSagar, Nagpur}
 				\inHeading{Class\hspace{18pt}:}\inBody{10\textsuperscript{th}}\\
 				\inHeading{Board\hspace{15pt}:}\inBody{CBSE}\\
-				\inHeading{Optional\hspace{3pt}:}\inBody{Computer Science}\\
+				\inHeading{Optional\hspace{3pt}:}\inBody{Foundations Of IT}\\
 				\inHeading{GPA\hspace{24pt}:}\inBody{\hspace{2pt}9.4/10}
 			\end{minipage}
 			%%END ENTRY
@@ -125,7 +132,7 @@
 				\heading{SendOver}
 				\inHeading{Description :}\inBody{A Simple Web Utility To Send Files Over To Other Devices Within The Same Network.}\\
 				\inHeading{Technologies Used :}\inBody{ExpressJS , React}\\
-				\inHeading{Repository :}\inBody{github.com/xyAshay/sendOver}
+				\inHeading{Repository :}\href{https://www.github.com/xyAshay/sendOver}{\inBody{github.com/xyAshay/sendOver}}
 			\end{minipage}
 			%%END ENTRY
 		\secEnd
