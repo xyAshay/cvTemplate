@@ -14,6 +14,8 @@
 \usepackage{fontspec}
 \usepackage{ragged2e}
 \usepackage{titlesec}
+\usepackage[absolute]{textpos}
+\usepackage[UKenglish]{isodate}
 
 %%DEFINE COLORS
 \usepackage[usenames,dvipsnames]{xcolor} 
@@ -33,6 +35,17 @@
 		\fontspec[Path = fonts/roboto/]{Roboto-LightItalic}\selectfont\color{main} #3
 		\\[38pt]
 	}
+}
+
+
+%%DRAWING LAST UPDATED
+
+\newcommand{\showUpdated}{
+	\setlength{\TPHorizModule}{1mm} \setlength{\TPVertModule}{1mm}
+	\begin{textblock}{60}(150,2)
+		\fontsize{8pt}{10pt}
+		\fontspec[Path = fonts/raleway/]{Raleway-Regular}\selectfont\color{grey} Last Updated On \today
+	\end{textblock}
 }
 
 %%FORMATTING SECTIONS
