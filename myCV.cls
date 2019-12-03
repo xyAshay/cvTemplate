@@ -5,7 +5,6 @@
 
 \DeclareOption{draft}{\setlength\overfullrule{5pt}}
 \DeclareOption{final}{\setlength\overfullrule{0pt}}
-
 %INHERIT OPTIONS FROM ARTICLE
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}
@@ -14,7 +13,7 @@
 \LoadClass{article}
 
 %% PACKAGES
-\usepackage[hmargin=1.5cm , vmargin=1cm,includefoot]{geometry}
+\usepackage[left=1.4cm, top=1cm, right=1.4cm, bottom=1cm, footskip=0.25cm]{geometry}
 \usepackage{fontspec}
 \usepackage{ragged2e}
 \usepackage{fancyhdr}
@@ -49,7 +48,7 @@
 %%DRAWING LAST UPDATED
 \newcommand{\showUpdated}{
 	\setlength{\TPHorizModule}{1mm} \setlength{\TPVertModule}{1mm}
-	\begin{textblock}{60}(150,2)
+	\begin{textblock}{50}(150,2)
 		\fontsize{8pt}{10pt}
 		\fontspec[Path = fonts/raleway/]{Raleway-Regular}\selectfont\color{grey} Last Updated On \today
 	\end{textblock}
@@ -62,6 +61,15 @@
 		\fontsize{8pt}{11pt}
 		\fontspec[Path = fonts/raleway/]{Raleway-Regular}\selectfont\color{grey} Ashay Sahare \textbullet{} Curriculum Vitae
 	}
+}
+
+%%DRAW OBJECTIVE
+\newcommand{\drawObj}[1]{
+	\setlength{\TPHorizModule}{1mm} \setlength{\TPVertModule}{1mm}
+	\begin{textblock}{100}(100,12)	
+		\fontsize{11pt}{13pt}
+		\fontspec[Path = fonts/raleway/]{Raleway-Italic}\selectfont\color{grey} #1
+	\end{textblock}
 }
 
 %%FORMATTING SECTIONS
