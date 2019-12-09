@@ -1,5 +1,5 @@
 %% IDENTIFICATION
-\ProvidesClass{myCV}[2019/11/18 CV Class]
+\ProvidesClass{CVStyling}[2019/11/18 CV Class]
 \NeedsTeXFormat{LaTeX2e}
 
 
