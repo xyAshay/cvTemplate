@@ -13,7 +13,7 @@
 \LoadClass{article}
 
 %% PACKAGES
-\usepackage[left=1.4cm, top=1cm, right=1.4cm, bottom=1cm, footskip=0.25cm]{geometry}
+\usepackage[left=1.4cm, top=0.3cm, right=1.4cm, bottom=1cm, footskip=0.25cm]{geometry}
 \usepackage{fontspec}
 \usepackage{ragged2e}
 \usepackage{fancyhdr}
@@ -29,10 +29,10 @@
 \definecolor{darkgrey}{HTML}{333333}
 \definecolor{grey}{HTML}{555555}
 
-
+%%CV-TEMPLATE
 %%DRAWING THE HEADER SECTION
 \newcommand{\drawHead}[3]{
-	\vspace*{-10pt}
+	\vspace*{0pt}
 	\raggedright{
 		\fontsize{30pt}{36pt}
 		\fontspec[Path = fonts/roboto/]{Roboto-Medium}\selectfont\color{main} #1
@@ -40,7 +40,7 @@
 		\\
 		\fontsize{14pt}{17pt}
 		\fontspec[Path = fonts/roboto/]{Roboto-LightItalic}\selectfont\color{main} #3
-		\\[38pt]
+		\\[25pt]
 	}
 }
 
@@ -55,20 +55,20 @@
 }
 
 %%DRAWING FOOTER
-\newcommand{\drawFoot}{
+\newcommand{\drawFoot}[1]{
 	\fancyfoot{}
 	\fancyfoot[C]{
 		\fontsize{8pt}{11pt}
-		\fontspec[Path = fonts/raleway/]{Raleway-Regular}\selectfont\color{grey} Ashay Sahare \textbullet{} Curriculum Vitae
+		\fontspec[Path = fonts/raleway/]{Raleway-Regular}\selectfont\color{grey} #1 \textbullet{} Curriculum Vitae
 	}
 }
 
 %%DRAW OBJECTIVE
 \newcommand{\drawObj}[1]{
 	\setlength{\TPHorizModule}{1mm} \setlength{\TPVertModule}{1mm}
-	\begin{textblock}{100}(100,12)	
+	\begin{textblock}{100}(95,5)	
 		\fontsize{11pt}{13pt}
-		\fontspec[Path = fonts/raleway/]{Raleway-Italic}\selectfont\color{grey} #1
+		\fontspec[Path = fonts/raleway/]{Raleway-Italic}\center\selectfont\color{grey} #1
 	\end{textblock}
 }
 
@@ -78,7 +78,6 @@
 	\fontsize{15pt}{18pt}
 	\fontspec[Path = fonts/raleway/]{Raleway-Medium}\selectfont\color{main}
 }{}{0pt}{} 
-
 
 %%CUSTOM COMMANDS
 \newcommand{\heading}[1]{
@@ -118,3 +117,6 @@
 \newcommand{\secLinee}{
 	\vspace{-13pt}\color{darkgrey}\rule{1.05\textwidth}{1pt}\vspace{5pt}
 }
+
+
+
