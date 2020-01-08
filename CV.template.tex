@@ -1,0 +1,159 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+% Github:
+% https://github.com/xyAshay/
+%
+% Author:
+% xyAshay
+
+\documentclass [a4paper]{CVStyling}
+
+\begin{document}
+	\pagestyle{fancy}
+	\fancyhf{}
+	\renewcommand{\footrulewidth}{0pt}
+	\renewcommand{\headrulewidth}{0pt} 
+	\drawHead{Lorem}{Ipsum}{ \hspace{5pt} }
+	\showUpdated
+	\drawObj{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida, dui ut fermentum convallis, elit nibh vestibulum tellus, eget egestas risus arcu blandit ante. Phasellus. }
+	\drawFoot{My Name}
+	
+	\begin{minipage}[t]{0.37\textwidth}
+		\section*{Personal Info}
+			\secLine
+			\\[1pt]
+			\heading{\faMapMarker \hspace{5pt} Address}
+			\body{Lorem ipsum dolor sit \\ consectetur adipiscing elit}
+			\heading{\faPhone \hspace{5pt} Phone}
+			\body{(+1) 999-999-9999 \\(+1) 999-999-9990}
+			\heading{\faEnvelopeO \hspace{5pt} Email}
+			\href{mailto:mail@mymail.me}{\hspace{-5pt}\body{mail@mymail.me}}
+			
+			\heading{\faLinkedinSquare \hspace{5pt} LinkedIn}
+			\href{https://www.linkedin.com/URL}{\hspace{-5pt}\body{https://www.linkedin.com/URL}}
+			\heading{\hspace{0pt} \faGithub \hspace{4pt} GitHub}
+			\href{https://www.github.com/URL}{\hspace{-5pt}\body{https://www.github.com/URL}}
+		\secEnd
+			
+		\section*{Left Section 2}
+			\secLine
+			\heading{Subheading L2 1}
+			\body{Item 1 \textbullet{} Item 2 \textbullet{} Item 3 \textbullet{} Item 4}
+			\heading{Subheading L2 2}
+			\body{Item 1 \textbullet{} Item 2 \textbullet{} Item 3 \textbullet{} Item 4 \\ \textbullet{}Item 5 \textbullet{}Item 6 \textbullet{}Item 7}
+			\heading{Subheading L2 3}
+			\body{Item 1 \textbullet{} Item 2 \textbullet{} Item 3}
+			\heading{Subheading L2 4}
+			\body{Item 1 \textbullet{} Item 2 \textbullet{} Item 3}
+		\secEnd
+			
+		\section*{Left Section 3}
+			\secLine
+			\body{\textbullet{} Lorem ipsum dolor sit}\vspace{-5pt}
+			\body{\textbullet{} consectetur adipiscing elit}\vspace{-5pt}
+			\body{\textbullet{} Donec gravida nisi ut}\vspace{-5pt}
+			\body{\textbullet{} Praesent pulvinar rhoncus urna}\vspace{-5pt}
+			\body{\textbullet{} Nulla sed mi feugiat venenatis}
+			\secEnd
+			
+		\section*{Left Section 4}
+			\secLine
+			\body{\textbullet{}  Sed fermentum, elit ut}\vspace{-5pt}
+			\body{\textbullet{} Donec gravida nisi ut quam varius}\vspace{-5pt}
+			\body{\textbullet{} Donec gravida nisi ut quam varius \\ \hspace{5pt} Sed fermentum, elit ut}
+		\secEnd			
+	\end{minipage}
+	\hfill
+	%%SECOND COLUMN
+	\begin{minipage}[t]{0.59\textwidth}
+		\section*{Education}
+			\secLinee
+			\begin{minipage}{0.25\textwidth}
+				\body{July 20xx - May 20xx (Expected)}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{15pt}
+				\heading{XYZ University}
+				\inHeading{Course\hspace{10pt}:}\inBody{Sed fermentum}\\
+				\inHeading{Major\hspace{17pt}:}\inBody{elit ut}\\
+				\inHeading{Head x\hspace{10pt}:}\inBody{Elih Jlope}\\
+				\inHeading{GPA\hspace{24pt}:}\inBody{\hspace{2pt}8.xx/10}
+			\end{minipage}
+			%END ENTRY%
+			\begin{minipage}{0.25\textwidth}
+				\body{July 20xx - May 20xx}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{15pt}
+				\heading{ABC High School}
+				\inHeading{Head 1\hspace{10pt}:}\inBody{Sed fermentum}\\
+				\inHeading{Head 2\hspace{10pt}:}\inBody{elit ut}\\
+				\inHeading{Head 3\hspace{10pt}:}\inBody{Elih Jlope}\\
+				\inHeading{GPA\hspace{24pt}:}\inBody{\hspace{2pt}8.xx/10}
+			\end{minipage}
+			%END ENTRY%
+			\begin{minipage}{0.25\textwidth}
+				\body{July 20xx - May 20xx}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{15pt}
+				\heading{Donec Gravida Nisi Utl}
+				\inHeading{Head 1\hspace{10pt}:}\inBody{Sed fermentum}\\
+				\inHeading{Head 2\hspace{10pt}:}\inBody{Elih Jlope}\\
+				\inHeading{GPA\hspace{24pt}:}\inBody{\hspace{2pt}8.xx/10}
+			\end{minipage}
+			%%END ENTRY
+		\secEnd
+		
+		\section*{Experience}
+			\secLinee
+			\begin{minipage}{0.25\textwidth}
+				\body{Sept 20xx - Dec 20xx}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{15pt}
+				\heading{XYZ Firm}
+				\inHeading{Description :}\inBody{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida nisi ut quam varius volutpat. Praesent pulvinar rhoncus urna}\\
+				\inHeading{Head 1 :}\inBody{Donec gravida nisi ut quam varius}\\
+				\inHeading{Head 2 :}\inBody{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}\\
+				\inHeading{Head 3 :}\inBody{Donec gravida nisi ut quam}
+			\end{minipage}
+			%%END ENTRY
+			\begin{minipage}{0.25\textwidth}
+				\body{May 20xx - July 20xx}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{15pt}
+				\heading{ABC Company}
+				\inHeading{Description :}\inBody{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida nisi ut quam varius volutpat.}\\
+				\inHeading{Head 1 :}\inBody{Donec gravida nisi ut quam varius}\\
+				\inHeading{Head 2 :}\inBody{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}\\
+				\inHeading{Head 3 :}\inBody{Donec gravida nisi ut quam}
+			\end{minipage}
+			%%END ENTRY
+			\begin{minipage}{0.25\textwidth}
+				\body{Sept 20xx - Dec 20xx}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.75\textwidth}
+				\vspace{15pt}
+				\heading{XY Corporation}
+				\inHeading{Description :}\inBody{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida nisi ut quam varius volutpat.}\\
+				\inHeading{Head 1 :}\inBody{Donec gravida nisi ut quam varius}\\
+				\inHeading{Head 2 :}\inBody{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}\\
+				\inHeading{Head 3 :}\inBody{Donec gravida nisi ut quam}
+			\end{minipage}
+			%%END ENTRY
+		\secEnd
+		%%ADD NEW SECTION
+		
+		%%END NEW SECTION
+	\end{minipage}
+	\hfill
+\end{document}
